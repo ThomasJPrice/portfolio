@@ -1,5 +1,7 @@
 import ClientProjects from "./ClientProjects";
+import Testimonials from "./Testimonials";
 
 export {
-  ClientProjects
+  ClientProjects,
+  Testimonials
 }
