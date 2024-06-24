@@ -1,3 +1,4 @@
+import { SectionTitle } from "@/components";
 import { ClientProjects } from "@/containers";
 
 export default function Home() {

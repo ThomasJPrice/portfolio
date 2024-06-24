@@ -1,4 +1,4 @@
-import { Projects } from "@/components"
+import { Projects, SectionTitle } from "@/components"
 
 const projectData = {
   projects: [
@@ -32,13 +32,18 @@ const projectData = {
 const ClientProjects = () => {
   return (
     <section id='projects' className="container mx-auto px-2">
-      <div className="mb-8">
+      {/* <div className="mb-8 flex flex-col items-center">
 
-        {/* custom heading */}
-        <h2 className="text-section font-semibold text-center mb-2 text-primary">Client Work</h2>
+        <SectionTitle desc title='Client Work' />
+        <h2 className={`text-section font-semibold text-center ${desc ? 'mb-2 mt-8' : 'my-8'} text-white bg-primary`}>{title}</h2>
 
         <p className="text-center"><span className="inline lg:hidden">Press</span><span className="hidden lg:inline">Click</span> to expand and view more information about each client</p>
-      </div>
+      </div> */}
+
+      <SectionTitle
+        desc={<><span className="inline lg:hidden">Press</span><span className="hidden lg:inline">Click</span> to expand and view more information about each client</>}
+        title='Client Work'
+      />
 
       <Projects projects={projectData.projects} />
     </section>
