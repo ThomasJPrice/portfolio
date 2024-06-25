@@ -26,7 +26,7 @@ const navLinks = [
 
 const Navbar = () => {
   return (
-    <nav className="h-[100px] container mx-auto px-2 flex justify-between items-center max-md:relative">
+    <nav className="h-[100px] container mx-auto px-2 flex justify-between items-center max-md:relative overflow-hidden">
       <a href="/" className="h-[60%]">
         <img src={Logo.src} alt="logo" className="w-full h-full object-contain" />
       </a>
