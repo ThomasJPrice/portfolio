@@ -1,8 +1,9 @@
-import { ClientProjects, Testimonials } from "@/containers";
+import { ClientProjects, Hero, Testimonials } from "@/containers";
 
 export default function Home() {
   return (
-    <main className="my-8">
+    <main className="">
+      <Hero />
       <ClientProjects />
       <Testimonials />
     </main>
