@@ -12,8 +12,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${roboto.className} bg-background text-white md:text-body text-[16px] overflow-hidden`}>
+    <html lang="en" className="scroll-smooth">
+      <body className={`${roboto.className} bg-background text-white md:text-body text-[16px]`}>
         <Navbar />
         {children}
       </body>

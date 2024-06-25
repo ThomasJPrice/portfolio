@@ -38,3 +38,19 @@
 .screenMinusNav {
   min-height: calc(100dvh - 100px);
 }
+
+/* scroll bar */
+/*width*/
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/*track*/
+::-webkit-scrollbar-track {
+  background: rgb(34, 34, 34);
+}
+
+/*thumb*/
+::-webkit-scrollbar-thumb {
+  background: rgb(91, 186, 111);
+}

@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from "react"
-import { AiFillAccountBook } from "react-icons/ai"
 
 const MobileMenu = ({ navLinks }) => {
   const [menuOpen, setMenuOpen] = useState(false)
