@@ -5,6 +5,7 @@ import Projects from "./Projects";
 import SectionTitle from "./SectionTitle";
 import TestimonialText from "./TestimonialText";
 import Navbar from "./Navbar";
+import MobileMenu from "./MobileMenu";
 
 export {
   ProjectCard,
@@ -13,5 +14,6 @@ export {
   Projects,
   SectionTitle,
   TestimonialText,
-  Navbar
+  Navbar,
+  MobileMenu
 }
