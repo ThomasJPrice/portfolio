@@ -4,6 +4,7 @@ import ImageGallery from "./ImageGallery";
 import Projects from "./Projects";
 import SectionTitle from "./SectionTitle";
 import TestimonialText from "./TestimonialText";
+import Navbar from "./Navbar";
 
 export {
   ProjectCard,
@@ -11,5 +12,6 @@ export {
   ImageGallery,
   Projects,
   SectionTitle,
-  TestimonialText
+  TestimonialText,
+  Navbar
 }

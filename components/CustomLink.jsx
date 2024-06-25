@@ -6,13 +6,13 @@ const CustomLink = ({ link, text, Icon, iconStyles }) => {
       <div className='flex gap-2 items-center absolute top-0 group-hover:-top-[45px] transition-all duration-150'>
         <span className='font-medium'>{text}</span>
 
-        <Icon className={`w-6 h-6 ${iconStyles}`} />
+        {Icon && <Icon className={`w-6 h-6 ${iconStyles}`} />}
       </div>
 
       <div className='flex gap-2 items-center absolute -bottom-[30px] group-hover:bottom-0 transition-all duration-150'>
         <span className='text-primary font-medium'>{link}</span>
 
-        <Icon className={`w-6 h-6 ${iconStyles} text-primary`} />
+        {Icon && <Icon className={`w-6 h-6 ${iconStyles} text-primary`} />}
       </div>
     </Link>
   )

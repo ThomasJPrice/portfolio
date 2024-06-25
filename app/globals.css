@@ -34,3 +34,7 @@
     transform: translateY(-3px);
   }
 }
+
+.screenMinusNav {
+  min-height: calc(100dvh - 100px);
+}
