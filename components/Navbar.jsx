@@ -11,8 +11,8 @@ const navLinks = [
     link: '#projects'
   },
   {
-    name: 'Services',
-    link: '#services'
+    name: 'Benefits',
+    link: '#benefits'
   },
   {
     name: 'Testimonials',
@@ -47,7 +47,6 @@ const Navbar = () => {
       </ul>
       
       {/* mobile menu */}
-      {/* <AiFillAccountBook className="absolute right-0" /> */}
       <MobileMenu navLinks={navLinks} />
     </nav>
   )

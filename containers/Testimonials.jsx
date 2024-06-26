@@ -29,12 +29,12 @@ const testimonialData = [
 
 const Testimonials = () => {
   return (
-    <section id='testimonials' className="container mx-auto px-2">
-      <SectionTitle title='Testimonials' />
+    <section id='testimonials' className="container mx-auto px-2 mb-16">
+      <SectionTitle title='What Do Clients Say?' />
 
       <div className="gap-6 grid grid-cols-1 lg:grid-cols-2">
         {testimonialData.map((item, index) => (
-          <div key={item + index} className="bg-black bg-opacity-30 rounded-md p-4 flex flex-col gap-8 items-start justify-between">
+          <div key={item + index} className="bg-black bg-opacity-20 rounded-md p-4 flex flex-col gap-8 items-start justify-between">
             <div>
               <img src={item.logoUrl} alt={item.name + ' Logo'} className="h-[80px] object-contain mb-4" />
 
