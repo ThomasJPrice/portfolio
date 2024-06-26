@@ -12,6 +12,7 @@ import CustomInput from "./CustomInput";
 import ContactButton from "./ContactButton";
 import AboutMeLink from "./AboutMeLink";
 import MobileNavLink from "./MobileNavLink";
+import Footer from "./Footer";
 
 export {
   ProjectCard,
@@ -27,5 +28,6 @@ export {
   CustomInput,
   ContactButton,
   AboutMeLink,
-  MobileNavLink
+  MobileNavLink,
+  Footer
 }

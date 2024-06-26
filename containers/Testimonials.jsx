@@ -29,7 +29,7 @@ const testimonialData = [
 
 const Testimonials = () => {
   return (
-    <section id='testimonials' className="container mx-auto px-2 mb-16">
+    <section id='testimonials' className="container mx-auto px-2 mb-8 md:mb-16">
       <SectionTitle title='What Do Clients Say?' />
 
       <div className="gap-6 grid grid-cols-1 lg:grid-cols-2">

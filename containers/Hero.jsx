@@ -9,11 +9,11 @@ const Hero = () => {
 
         <p className="max-w-[490px] text-[20px] md:text-[24px] leading-loose">I'm an aspiring <span className="font-semibold text-primary">Software Engineer</span> with a strong passion for building web applications with great user experiences. <br />Find out a bit more <AboutMeLink /></p>
 
-        <div className="flex gap-4">
-          <a href="" className="flex gap-2 p-[10px] bg-primary bg-opacity-70 rounded-md group">
+        <div className="flex gap-3">
+          <a href="/CV.pdf" download='Thomas Price CV' className="flex gap-2 p-[10px] bg-primary bg-opacity-70 rounded-md group">
             <AiOutlineCloudDownload className="w-[30px] h-[30px] group-hover:scale-[1.1] transition-all duration-150" />
           </a>
-          <a href="https://github.com/ThomasJPrice" className="flex gap-2 p-[10px] bg-primary bg-opacity-70 rounded-md group">
+          <a href="https://github.com/ThomasJPrice" className="flex gap-2 p-[10px] bg-primary bg-opacity-70 rounded-md group" target="_blank">
             <AiOutlineGithub className="w-[30px] h-[30px] group-hover:scale-[1.1] transition-all duration-150" />
           </a>
         </div>

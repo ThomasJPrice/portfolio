@@ -1,6 +1,6 @@
 import { Roboto, Roboto_Condensed } from "next/font/google";
 import "./globals.css";
-import { Navbar } from "@/components";
+import { Footer, Navbar } from "@/components";
 import { ModalProvider } from "@/hooks/useModal";
 
 const roboto = Roboto({ subsets: ["latin"], weight: ['400', '500', '700'] });
@@ -18,6 +18,7 @@ export default function RootLayout({ children }) {
         <body className={`${roboto.className} bg-background text-white md:text-body text-[16px]`}>
           <Navbar />
           {children}
+          <Footer />
         </body>
       </ModalProvider>
     </html>

@@ -31,7 +31,7 @@ const projectData = {
 
 const ClientProjects = () => {
   return (
-    <section id='projects' className="container mx-auto px-2 mb-16">
+    <section id='projects' className="container mx-auto px-2 mb-8 md:mb-16">
       <SectionTitle
         desc={<><span className="inline lg:hidden">Press</span><span className="hidden lg:inline">Click</span> to expand and view more information about each project</>}
         title='Recent Work'

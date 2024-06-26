@@ -3,5 +3,5 @@ import Alien from './alien.png'
 
 export {
   Logo,
-  Alien
+  Alien,
 }

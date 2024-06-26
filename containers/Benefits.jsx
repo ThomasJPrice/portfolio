@@ -2,7 +2,7 @@ import { SectionTitle } from "@/components"
 import * as Icons from 'react-icons/ai'
 
 const benefitsData = {
-  title: 'Why Me?',
+  title: 'Why Choose Me?',
   benefits: [
     {
       name: 'Mobile-First Design',
@@ -24,7 +24,7 @@ const benefitsData = {
 
 const Benefits = () => {
   return (
-    <section id="benefits" className="container px-2 mx-auto mb-16">
+    <section id="benefits" className="container px-2 mx-auto mb-8 md:mb-16">
       <SectionTitle title={benefitsData.title} />
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8">
