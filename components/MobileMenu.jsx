@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from "react"
+import { MobileNavLink } from "."
 
 const MobileMenu = ({ navLinks }) => {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -21,9 +22,7 @@ const MobileMenu = ({ navLinks }) => {
       <div className={`fixed md:hidden top-0 left-0 w-full h-screen bg-background z-10 ${menuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'} transitionAll`}>
         <ul className="w-full h-full flex flex-col items-center justify-center pb-32 gap-8">
           {navLinks.map((item, index) => (
-            <li className="text-5xl sm:text-6xl text-center hover:text-primary transitionAll" key={item+index}>
-              <a onClick={() => setMenuOpen(false)} href={item.link}>{item.name}</a>
-            </li>
+            <MobileNavLink item={item} setMenuOpen={setMenuOpen} key={item+index} />
           ))}
         </ul>
       </div>

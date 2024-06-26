@@ -9,6 +9,9 @@ import MobileMenu from "./MobileMenu";
 import Modal from "./Modal";
 import NavLink from "./NavLink";
 import CustomInput from "./CustomInput";
+import ContactButton from "./ContactButton";
+import AboutMeLink from "./AboutMeLink";
+import MobileNavLink from "./MobileNavLink";
 
 export {
   ProjectCard,
@@ -21,5 +24,8 @@ export {
   MobileMenu,
   Modal,
   NavLink,
-  CustomInput
+  CustomInput,
+  ContactButton,
+  AboutMeLink,
+  MobileNavLink
 }
