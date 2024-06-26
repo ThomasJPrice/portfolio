@@ -6,6 +6,8 @@ import SectionTitle from "./SectionTitle";
 import TestimonialText from "./TestimonialText";
 import Navbar from "./Navbar";
 import MobileMenu from "./MobileMenu";
+import Modal from "./Modal";
+import NavLink from "./NavLink";
 
 export {
   ProjectCard,
@@ -15,5 +17,7 @@ export {
   SectionTitle,
   TestimonialText,
   Navbar,
-  MobileMenu
+  MobileMenu,
+  Modal,
+  NavLink
 }

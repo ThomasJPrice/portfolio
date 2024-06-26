@@ -1,3 +1,4 @@
+import { Modal } from "@/components";
 import { Benefits, ClientProjects, Contact, Hero, Testimonials } from "@/containers";
 
 export default function Home() {
@@ -8,6 +9,8 @@ export default function Home() {
       <Benefits />
       <Testimonials />
       <Contact />
+
+      <Modal />
     </main>
   );
 }
