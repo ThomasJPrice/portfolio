@@ -58,8 +58,6 @@ const Modal = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const form = useRef();
 
-  console.log(isOpen)
-
   const contactSubmit = (e) => {
     e.preventDefault()
 
