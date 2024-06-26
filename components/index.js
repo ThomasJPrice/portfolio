@@ -8,6 +8,7 @@ import Navbar from "./Navbar";
 import MobileMenu from "./MobileMenu";
 import Modal from "./Modal";
 import NavLink from "./NavLink";
+import CustomInput from "./CustomInput";
 
 export {
   ProjectCard,
@@ -19,5 +20,6 @@ export {
   Navbar,
   MobileMenu,
   Modal,
-  NavLink
+  NavLink,
+  CustomInput
 }

@@ -1,9 +1,12 @@
-// hooks/useModal.js
 'use client'
 
-import { useState } from 'react';
+// hooks/ModalContext.js
 
-const useModal = () => {
+import React, { createContext, useContext, useState } from 'react';
+
+const ModalContext = createContext();
+
+export const ModalProvider = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => {
@@ -15,16 +18,20 @@ const useModal = () => {
   };
 
   const toggleModal = () => {
-    console.log('toggled');
     setIsOpen(!isOpen);
   };
 
-  return {
-    isOpen,
-    openModal,
-    closeModal,
-    toggleModal,
-  };
+  return (
+    <ModalContext.Provider value={{ isOpen, openModal, closeModal, toggleModal }}>
+      {children}
+    </ModalContext.Provider>
+  );
 };
 
-export default useModal;
+export const useModal = () => {
+  const context = useContext(ModalContext);
+  if (!context) {
+    throw new Error('useModal must be used within a ModalProvider');
+  }
+  return context;
+};

@@ -1,14 +1,14 @@
 'use client'
 
-import useModal from "@/hooks/useModal"
+import { useModal } from "@/hooks/useModal"
 
 const NavLink = ({ item, index}) => {
-  const { toggleModal } = useModal()
+  const { openModal } = useModal()
 
   return (
     <li key={item + index} className="font-semibold overflow-hidden">
       <a href={item.link} className="relative group h-[30px] overflow-hidden" 
-        onClick={item.link === '#' ? toggleModal : () => {}}>
+        onClick={item.link === '#' ? openModal : () => {}}>
 
         <span aria-hidden="true" className="block h-[30px] invisible">{item.name}</span>
 

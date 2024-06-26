@@ -54,3 +54,8 @@
 ::-webkit-scrollbar-thumb {
   background: rgb(91, 186, 111);
 }
+
+
+.modalShadow {
+  box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
+}
