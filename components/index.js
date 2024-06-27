@@ -15,6 +15,8 @@ import MobileNavLink from "./MobileNavLink";
 import Footer from "./Footer";
 import Squiggles from "./Squiggles";
 
+import { MotionDiv, MotionNav, MotionA } from "./MotionComponent";
+
 export {
   ProjectCard,
   CustomLink,
@@ -31,5 +33,9 @@ export {
   AboutMeLink,
   MobileNavLink,
   Footer,
-  Squiggles
+  Squiggles,
+
+  MotionDiv,
+  MotionNav,
+  MotionA
 }

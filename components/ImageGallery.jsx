@@ -18,10 +18,11 @@ const ImageGallery = ({ images }) => {
       navigation={true}
       modules={[Pagination, Navigation]}
       className='w-full aspect-[3/2]'
+      autoHeight={true}
     >
-      {images.map((item, index) => (
+      {images.map((item, index) => ( 
         <SwiperSlide key={item+index} className='w-full h-full'>
-          <img src={item} alt="item" className='w-full h-full object-cover' />
+          <img src={item} alt="item" className='w-full h-full object-contain' />
         </SwiperSlide>
       ))}
     </Swiper>

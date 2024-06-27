@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <ModalProvider>
-        <body className={`${roboto.className} bg-background text-white md:text-body text-[16px]`}>
+        <body className={`${roboto.className} bg-background text-white md:text-body text-[16px] flex flex-col min-h-screen`}>
           <Squiggles />
 
           <Navbar />

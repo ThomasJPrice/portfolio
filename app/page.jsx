@@ -3,7 +3,7 @@ import { Benefits, ClientProjects, Contact, Hero, Testimonials } from "@/contain
 
 export default function Home() {
   return (
-    <main className="z-10">
+    <main className="flex-grow">
       <Hero />
       <ClientProjects />
       <Benefits />

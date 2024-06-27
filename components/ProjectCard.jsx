@@ -1,7 +1,7 @@
 'use client';
 
 import { Textfit } from 'react-textfit';
-import { CustomLink, ImageGallery } from '.';
+import { CustomLink, ImageGallery, MotionDiv } from '.';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 
 const ProjectCard = ({ project, index, open, setOpenIndex }) => {
@@ -13,8 +13,15 @@ const ProjectCard = ({ project, index, open, setOpenIndex }) => {
     }
   };
 
+  const initialX = (index % 2) ? '-50%' : '50%'
+
   return (
-    <div>
+    <MotionDiv
+      initial={{ x: initialX, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      transition={{ delay: 0, ease: 'easeInOut', duration: 0.75 }}
+      viewport={{ once: 'true', amount: 0.25 }}
+    >
       {/* TOP */}
       <div
         className={`w-full bg-background xl:h-[128px] group border ${open ? 'rounded-t-md' : 'rounded-md'} cursor-pointer`}
@@ -81,7 +88,7 @@ const ProjectCard = ({ project, index, open, setOpenIndex }) => {
           <ImageGallery images={project.imageUrls} />
         </div>
       </div>
-    </div>
+    </MotionDiv>
   );
 };
 

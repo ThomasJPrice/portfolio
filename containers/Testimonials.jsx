@@ -1,4 +1,4 @@
-import { SectionTitle, TestimonialText } from "@/components"
+import { MotionDiv, SectionTitle, TestimonialText } from "@/components"
 
 const testimonialData = [
   {
@@ -34,7 +34,12 @@ const Testimonials = () => {
 
       <div className="gap-6 grid grid-cols-1 lg:grid-cols-2">
         {testimonialData.map((item, index) => (
-          <div key={item + index} className="bg-[#1B1B1B] rounded-md p-4 flex flex-col gap-8 items-start justify-between">
+          <MotionDiv key={item + index} className="bg-[#1B1B1B] rounded-md p-4 flex flex-col gap-8 items-start justify-between"
+            initial={{ y: "10%", opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.5 * index, ease: 'easeInOut', duration: 0.5 }}
+            viewport={{ once: true, amount: 0 }}
+          >
             <div>
               <img src={item.logoUrl} alt={item.name + ' Logo'} className="h-[80px] object-contain mb-4" />
 
@@ -45,11 +50,11 @@ const Testimonials = () => {
               <h4 className="font-bold">{item.name}</h4>
               <a className="font-condensed" href={item.website} target='_blank'>{item.website.replace('https://', '')}</a>
             </div>
-          </div>
+          </MotionDiv>
         ))}
       </div>
     </section>
   )
 }
 
-export default Testimonials
+export default Testimonials 

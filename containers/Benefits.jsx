@@ -1,4 +1,4 @@
-import { SectionTitle } from "@/components"
+import { MotionDiv, SectionTitle } from "@/components"
 import * as Icons from 'react-icons/ai'
 
 const benefitsData = {
@@ -29,11 +29,16 @@ const Benefits = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8">
         {benefitsData.benefits.map((item, index) => (
-          <div key={item + index} className="flex flex-col hover:scale-[1.02] transitionAll items-center border rounded-md p-4 gap-2 shadow-lg bg-[#222222]">
+          <MotionDiv key={item + index} className="flex flex-col hover:scale-[1.02] transitionAll items-center border rounded-md p-4 gap-2 shadow-lg bg-[#222222]"
+            initial={{ y: "20%", opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.5 * index, ease: 'easeInOut', duration: 0.5 }}
+            viewport={{ once: true, amount: 0.25 }}
+          >
             <item.icon className="border rounded-sm p-1 text-5xl border-primary text-primary mb-2" />
             <p className="text-[20px] md:text-[24px] font-condensed font-semibold">{item.name}</p>
             <p className="text-center">{item.desc}</p>
-          </div>
+          </MotionDiv>
         ))}
       </div>
     </section>
