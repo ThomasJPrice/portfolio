@@ -17,7 +17,7 @@ const ProjectCard = ({ project, index, open, setOpenIndex }) => {
     <div>
       {/* TOP */}
       <div
-        className={`w-full xl:h-[128px] group border ${open ? 'rounded-t-md' : 'rounded-md'} cursor-pointer`}
+        className={`w-full bg-background xl:h-[128px] group border ${open ? 'rounded-t-md' : 'rounded-md'} cursor-pointer`}
         onClick={() => handleOpen()}
       >
         <div className="mx-4 md:mx-8 flex justify-between items-center">
@@ -49,7 +49,7 @@ const ProjectCard = ({ project, index, open, setOpenIndex }) => {
 
       {/* CONTENT OPEN DEP */}
       <div
-        className={`transition-all duration-300 ease-in-out ${open ? 'max-h-[1000px] opacity-100 py-8' : 'max-h-0 opacity-0 py-0'} overflow-hidden flex flex-col lg:flex-row rounded-b-md px-4 lg:px-8 gap-4 lg:gap-[80px] border`}
+        className={`transition-all duration-300 ease-in-out ${open ? 'max-h-[1000px] opacity-100 py-8' : 'max-h-0 opacity-0 py-0'} overflow-hidden flex flex-col lg:flex-row rounded-b-md px-4 lg:px-8 gap-4 lg:gap-[80px] border bg-background`}
       >
         {/* Content */}
         <div className="flex-1 flex flex-col justify-between gap-4">

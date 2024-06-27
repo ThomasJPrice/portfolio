@@ -34,7 +34,7 @@ const Testimonials = () => {
 
       <div className="gap-6 grid grid-cols-1 lg:grid-cols-2">
         {testimonialData.map((item, index) => (
-          <div key={item + index} className="bg-black bg-opacity-20 rounded-md p-4 flex flex-col gap-8 items-start justify-between">
+          <div key={item + index} className="bg-[#1B1B1B] rounded-md p-4 flex flex-col gap-8 items-start justify-between">
             <div>
               <img src={item.logoUrl} alt={item.name + ' Logo'} className="h-[80px] object-contain mb-4" />
 

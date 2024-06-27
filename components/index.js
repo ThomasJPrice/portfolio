@@ -13,6 +13,7 @@ import ContactButton from "./ContactButton";
 import AboutMeLink from "./AboutMeLink";
 import MobileNavLink from "./MobileNavLink";
 import Footer from "./Footer";
+import Squiggles from "./Squiggles";
 
 export {
   ProjectCard,
@@ -29,5 +30,6 @@ export {
   ContactButton,
   AboutMeLink,
   MobileNavLink,
-  Footer
+  Footer,
+  Squiggles
 }

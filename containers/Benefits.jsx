@@ -29,7 +29,7 @@ const Benefits = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8">
         {benefitsData.benefits.map((item, index) => (
-          <div key={item + index} className="flex flex-col hover:scale-[1.02] transitionAll items-center border rounded-md p-4 gap-2 shadow-lg">
+          <div key={item + index} className="flex flex-col hover:scale-[1.02] transitionAll items-center border rounded-md p-4 gap-2 shadow-lg bg-[#222222]">
             <item.icon className="border rounded-sm p-1 text-5xl border-primary text-primary mb-2" />
             <p className="text-[20px] md:text-[24px] font-condensed font-semibold">{item.name}</p>
             <p className="text-center">{item.desc}</p>

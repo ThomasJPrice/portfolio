@@ -3,7 +3,7 @@ import { Benefits, ClientProjects, Contact, Hero, Testimonials } from "@/contain
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="z-10">
       <Hero />
       <ClientProjects />
       <Benefits />

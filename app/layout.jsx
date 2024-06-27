@@ -1,6 +1,6 @@
 import { Roboto, Roboto_Condensed } from "next/font/google";
 import "./globals.css";
-import { Footer, Navbar } from "@/components";
+import { Footer, Navbar, Squiggles } from "@/components";
 import { ModalProvider } from "@/hooks/useModal";
 
 const roboto = Roboto({ subsets: ["latin"], weight: ['400', '500', '700'] });
@@ -16,6 +16,8 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth">
       <ModalProvider>
         <body className={`${roboto.className} bg-background text-white md:text-body text-[16px]`}>
+          <Squiggles />
+
           <Navbar />
           {children}
           <Footer />
