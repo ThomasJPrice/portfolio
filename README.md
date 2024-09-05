@@ -3,6 +3,8 @@
 
 I created my portfolio based on bold and simple guidelines. I also added small microanimations to make the experience smooth whilst also showing my experience and technologies.
 
+## See it live
+https://thomasprice.me
 
 ## Screenshots
 
