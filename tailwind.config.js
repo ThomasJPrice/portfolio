@@ -9,8 +9,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'main': ['Roboto'],
-        'condensed': ['__Roboto_Condensed_16d813', '__Roboto_Condensed_Fallback_16d813']
+        'main': ['var(--font-roboto)'],
+        'condensed': ['var(--font-roboto-condensed)'],
       },
       colors: {
         'primary': '#5BBA6F',
