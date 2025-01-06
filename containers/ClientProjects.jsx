@@ -3,12 +3,20 @@ import { Projects, SectionTitle } from "@/components"
 const projectData = {
   projects: [
     {
-      name: 'Dijjie',
+      name: 'Paapo',
       year: '2024',
-      description: 'I worked closely with Dijjie Consulting in order to create a website that is scalable and fast. To meet these requirements, I used NextJS 14 dynamic routes to easily navigate to new text pages for different services or scenarios they offer/cater to, which they can easily add in their admin panel hosted by Sanity.',
-      website: 'https://dijjie.com',
-      imageUrls: ['https://i.ibb.co/RCfGqMb/Laptop.jpg', 'https://i.ibb.co/jTcfS2m/Phone.jpg', 'https://i.ibb.co/bBbbR0K/iPad.jpg'],
-      tags: ['NextJS', 'From Scratch', 'Dynamic Routes']
+      description: 'Paapo are on a mission to build financial resilience and stability for everyone. I helped them to design and build a website that reflects their vision with key features such as a Resource Hub that they can easily create resources for using Sanity embedded studio and NextJS 15 dynamic routes, and a money personality quiz.',
+      website: 'https://paapo.co.uk',
+      imageUrls: ['https://cloud-di0nqc237-hack-club-bot.vercel.app/0laptop.png', 'https://cloud-n62xq2n1m-hack-club-bot.vercel.app/0phone.png', 'https://cloud-kdpndr8r0-hack-club-bot.vercel.app/0ipad.png'],
+      tags: ['NextJS', 'Integrated Studio', 'Dynamic Routes']
+    },
+    {
+      name: 'Baby Blue',
+      year: '2024',
+      description: 'I worked closely with Baby Blue IT & Consulting in order to create a website that is scalable and fast. To meet these requirements, I used NextJS 14 dynamic routes to easily navigate to new text pages for different services or scenarios they offer/cater to, which they can easily add in their admin panel hosted by Sanity.',
+      website: 'https://babyblueitconsulting.com',
+      imageUrls: ['https://cloud-b7vgj79fj-hack-club-bot.vercel.app/0laptop.png', 'https://cloud-39m8c81s6-hack-club-bot.vercel.app/0phone.png', 'https://cloud-io4qecthx-hack-club-bot.vercel.app/0ipad.png'],
+      tags: ['NextJS', 'Blog', 'Dynamic Routes']
     },
     {
       name: 'Perran Beach House',

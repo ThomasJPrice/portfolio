@@ -101,7 +101,7 @@ const Modal = () => {
               <div className="flex flex-col gap-4 mt-8">
                 <p>I'm a passionate web developer and <span className="text-primary font-medium">entrepreneur</span>. I create impactful websites and digital solutions while being proficient in <span className="text-primary font-medium">Python</span>, <span className="text-primary font-medium">JavaScript</span>, and <span className="text-primary font-medium">NextJS</span>, and have experience in designing logos, editing videos, and handling marketing and advertising tasks.</p>
 
-                <p>In my free time, I enjoy <span className="text-primary font-medium">web and media design</span>, 3D printing, and programming. I'm an avid badminton player and runner, and I've completed the Duke of Edinburgh Award at the Silver level.</p>
+                <p>In my free time, I enjoy <span className="text-primary font-medium">web and media design</span>, 3D printing, and programming. I'm an avid badminton player and runner, and I've completed the Duke of Edinburgh Award at the Silver level (Gold in progress!). I'm also a member for <a href="https://hackclub.com/" target="_blank" className="text-primary underline font-medium">Hack Club</a> and a Co-Organiser for UK in <a href="https://eurohacks.org/" target="_blank" className="text-primary underline font-medium">EuroHacks</a></p>
               </div>
             </div>
 
