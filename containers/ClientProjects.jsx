@@ -1,4 +1,5 @@
 import { Projects, SectionTitle } from "@/components"
+import ScrollingLogos from "@/components/ScrollingLogos"
 
 const projectData = {
   projects: [
@@ -42,14 +43,14 @@ const projectData = {
       imageUrls: ['https://i.ibb.co/cXJ2mzP/Laptop.jpg', 'https://i.ibb.co/vdLWf4M/Phone.jpg', 'https://i.ibb.co/44h0Pbg/iPad.jpg'],
       tags: ['ReactJS', 'Static Site', 'Contact Form']
     },
-    {
-      name: 'Veil and Vogue',
-      year: '2023',
-      description: "Veil and Vogue asked me to create them a full e-commerce website and brand from scratch. They sell modest Islamic clothing and because of this I chose to use a sage green to reflect calmness. I decided on NextJS because of it's server side rendering, which would boost performance as well as routing. I also chose to use Sanity CMS over other CMS's such as Strapi because I could customize it exact to my client's needs. Because of this, it is now very user friendly and the owner feels confident using it. My final decision was Stripe, I chose them as the payment processing platform because it is easy to implement, and customize, their checkout page.",
-      website: 'https://veilandvogue.co.uk',
-      imageUrls: ['https://i.ibb.co/1KsSj3v/Laptop.jpg', 'https://i.ibb.co/pJkmvrz/Phone.jpg', 'https://i.ibb.co/NSnjphQ/iPad.jpg'],
-      tags: ['NextJS', 'Stripe', 'Ecommerce']
-    },
+    // {
+    //   name: 'Veil and Vogue',
+    //   year: '2023',
+    //   description: "Veil and Vogue asked me to create them a full e-commerce website and brand from scratch. They sell modest Islamic clothing and because of this I chose to use a sage green to reflect calmness. I decided on NextJS because of it's server side rendering, which would boost performance as well as routing. I also chose to use Sanity CMS over other CMS's such as Strapi because I could customize it exact to my client's needs. Because of this, it is now very user friendly and the owner feels confident using it. My final decision was Stripe, I chose them as the payment processing platform because it is easy to implement, and customize, their checkout page.",
+    //   website: 'https://veilandvogue.co.uk',
+    //   imageUrls: ['https://i.ibb.co/1KsSj3v/Laptop.jpg', 'https://i.ibb.co/pJkmvrz/Phone.jpg', 'https://i.ibb.co/NSnjphQ/iPad.jpg'],
+    //   tags: ['NextJS', 'Stripe', 'Ecommerce']
+    // },
   ]
 }
 

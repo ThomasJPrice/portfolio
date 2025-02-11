@@ -1,4 +1,5 @@
 import { Modal } from "@/components";
+import ScrollingLogos from "@/components/ScrollingLogos";
 import { Benefits, ClientProjects, Contact, Hero, Testimonials } from "@/containers";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <main className="flex-grow">
       <Hero />
       <ClientProjects />
+      <ScrollingLogos />
       <Benefits />
       <Testimonials />
       <Contact />

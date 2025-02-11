@@ -9,7 +9,7 @@ const Footer = () => {
         transition={{ delay: 0, ease: 'easeInOut', duration: 0.5 }}
         viewport={{ once: true, amount: 0.25 }}
       >
-        <a href="#">© 2024 Thomas Price</a>
+        <a href="#">© {new Date().getFullYear()} Thomas Price</a>
 
         <div className="hidden md:flex gap-8">
           <a href="/CV.pdf" download='Thomas Price CV' className="relative h-[30px] overflow-hidden group">
