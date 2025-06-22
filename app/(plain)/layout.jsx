@@ -9,7 +9,7 @@ const plainFont = EB_Garamond({
 
 const PlainLayout = ({children}) => {
   return (
-    <body id='plain' className={`${plainFont.className} ${plainFont.variable} bg-[#faf9f6] text-[#111111] text-[18px] leading-[1.7] m-0 py-16`}>
+    <body id='plain' className={`${plainFont.className} ${plainFont.variable} bg-[#faf9f6] text-[#111111] text-[18px] leading-[1.7] mx-4 md:m-0 py-8 md:py-16`}>
       {children}
     </body>
   )
