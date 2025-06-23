@@ -8,21 +8,21 @@
     @apply text-[2.25rem] font-normal;
   }
   h2 {
-    @apply text-[1.5rem] italic my-10 mb-4 mt-10;
+    @apply text-[1.5rem] italic mb-[1rem];
   }
   h3 {
     @apply text-[1.125rem] font-normal;
   }
   p, li {
-    @apply text-base font-normal;
+    @apply text-[1rem] font-normal;
   }
   em {
-    @apply text-sm italic;
+    @apply text-[0.875rem] italic;
   }
   ul {
     @apply list-disc pl-6;
   }
   a {
-    @apply underline underline-offset-2 text-inherit;
+    @apply underline underline-offset-2 text-inherit text-[1rem];
   }
 }

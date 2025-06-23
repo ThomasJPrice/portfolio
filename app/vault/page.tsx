@@ -1,8 +1,8 @@
-export default function Lab() {
+export default function Vault() {
   return (
     <main>
       <section>
-        <h1>lab</h1>
+        <h1>vault</h1>
         <p>Nothing to see here yet...</p>
       </section>
     </main>

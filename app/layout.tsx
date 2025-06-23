@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { EB_Garamond } from "next/font/google";
+import Navbar from "@/components/Navbar";
+import KeyboardNav from "@/components/KeyboardNav";
 
 const garamond = EB_Garamond({
   subsets: ['latin'],
@@ -21,9 +23,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`scroll-smooth ${garamond.variable} ${garamond.className} bg-[#faf9f6] text-[#111111] text-[18px] leading-[1.7] mx-4 md:m-0 py-8 md:py-16`}
+        className={`scroll-smooth ${garamond.variable} ${garamond.className} bg-[#faf9f6] text-[#111111] text-[18px] leading-[1.7] mx-4 md:m-0 pb-8 lowercase`}
       >
+        <Navbar />
         {children}
+
+        <KeyboardNav />
       </body>
     </html>
   );
